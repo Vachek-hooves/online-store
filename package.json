@@ -17,7 +17,11 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.7",
+<<<<<<< HEAD
     "@types/jest": "^29.5.2",
+=======
+    "axios-hooks": "^4.0.0",
+>>>>>>> 012083718baebd4b5285cb0ad137a706d05e3fa5
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
