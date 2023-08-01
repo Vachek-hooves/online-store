@@ -10,6 +10,8 @@ export enum EnumIcons {
   fb = 'fb',
   mail = 'mail',
   send = 'send',
+  sleft = 'sleft',
+  sright = 'sright',
 }
 
 export enum EnumBreakpoints {

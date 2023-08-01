@@ -10,6 +10,8 @@ import { SearchIcon } from './SearchIcon';
 import { SendIcon } from './SendIcon';
 import { UserIcon } from './UserIcon';
 import { YtIcon } from './YtIcon';
+import { SliderLeft } from './SliderLeft';
+import { SliderRight } from './SliderRight';
 
 export interface Icons {
   [key: string]: FC<{ iconClass: string }>;
@@ -27,4 +29,6 @@ export const icons: Icons = {
   yt: YtIcon,
   mail: MailIcon,
   send: SendIcon,
+  sleft: SliderLeft,
+  sright: SliderRight,
 };

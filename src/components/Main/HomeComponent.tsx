@@ -4,7 +4,6 @@ import { StyledHomeContent } from '@/theme/styles/layout/StyledHomeContent';
 import { Categories } from './Categories';
 import { Sale } from '@/ui/Sale';
 import { bikesData } from '@/mock-data/products';
-import { CustomSlider } from '@/ui/CustomSlider';
 import { Like } from '@/ui/Like';
 import { Raiting } from '@/ui/Raiting';
 import { Buy } from '@/ui/Buy';
@@ -13,6 +12,7 @@ import {
   StyledButton,
   StyledHero,
 } from '@/theme/styles/layout/StyledHomeBanner';
+import { SlickSlider } from '@/ui/SlickSlider';
 
 export const HomeComponent: FC = () => {
   return (
@@ -28,24 +28,24 @@ export const HomeComponent: FC = () => {
       </StyledHero>
       <StyledHomeContent>
         <Categories />
-        <CustomSlider
-          bikesData={bikesData}
-          headerName={'Best seller'}
+        <SlickSlider
+          headerName={'Best sellers'}
+          cartData={bikesData}
           saleComponent={<Sale />}
           like={<Like />}
           raiting={<Raiting />}
           buyButton={<Buy />}
         />
-        <CustomSlider
+        <SlickSlider
           headerName={'Skateboards'}
-          bikesData={bikesData}
+          cartData={bikesData}
           like={<Like />}
           raiting={<Raiting />}
           buyButton={<Buy />}
         />
-        <CustomSlider
+        <SlickSlider
           headerName={'Bicucle'}
-          bikesData={bikesData}
+          cartData={bikesData}
           like={<Like />}
           raiting={<Raiting />}
           buyButton={<Buy />}
