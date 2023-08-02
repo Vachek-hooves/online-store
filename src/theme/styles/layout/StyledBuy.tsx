@@ -1,10 +1,7 @@
 import { styled } from 'styled-components';
+import tw from 'twin.macro';
 export const StyledBuy = styled.div`
-  width: 218px;
-  height: 64px;
-  padding: 16px;
-  align-items: center;
+  ${tw`w-[218px] h-[64px] p-4 items-center rounded-2xl`}
   color: #fff;
   background-color: #212121;
-  border-radius: 16px;
 `;

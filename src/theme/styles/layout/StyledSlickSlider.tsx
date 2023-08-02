@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import tw from 'twin.macro';
 const ArrowRight = `<svg
 width="56"
 height="56"
@@ -31,44 +32,37 @@ xmlns="http://www.w3.org/2000/svg"
 </svg>`;
 
 export const StyledSlickSlider = styled.div`
-  max-width: 1620px;
-  height: 572px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+${tw`max-w-[1620px] h-[572px] flex flex-col justify-between`}
 
   .slider__header {
-    text-align: left;
-    color: var(--black, #212121);
+    ${tw`text-left text-[34px] not-italic font-black leading-10`}
     font-family: Lato;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 120%; /* 40.8px */
+    color: var(--black, #212121);
   }
 
   .slick-list {
-    max-width: 1620px;
+    ${tw`max-w-[1620px]`}
     transition: max-width 0.3s ease-out;
   }
   @media (max-width: 1680px) {
     .slick-list {
-      max-width: 1420px;
+      ${tw`max-w-[1420px]`}
     }
   }
   @media (max-width: 1420px) {
     .slick-list {
+      ${tw`max-w-[1048px]`}
       max-width: 1048px;
     }
   }
   @media (max-width: 1280px) {
     .slick-list {
-      max-width: 900px;
+      ${tw`max-w-[900px]`}
     }
   }
   @media (max-width: 980px) {
     .slick-list {
-      max-width: 600px;
+      ${tw`max-w-[600px]`}
     }
   }
   .slick-slide,
@@ -77,6 +71,7 @@ export const StyledSlickSlider = styled.div`
     width: 250px !important;
   }
   .slick-track {
+    ${tw``}
     display: flex;
     gap: 20px;
     justify-content: space-between;

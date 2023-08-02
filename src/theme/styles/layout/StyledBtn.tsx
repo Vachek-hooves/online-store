@@ -1,6 +1,8 @@
 import { styled } from 'styled-components';
+import tw from 'twin.macro';
 
 export const StyledBtn = styled.div`
+  ${tw`w-[250px] `}
   width: 1600px;
   min-width: 370px;
   display: flex;

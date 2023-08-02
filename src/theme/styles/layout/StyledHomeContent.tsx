@@ -1,13 +1,9 @@
 import { styled } from 'styled-components';
+import tw from 'twin.macro';
 export const StyledHomeContent = styled.div`
-  height: 2676px;
-  background: #f8faff;
-  text-align: center;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  align-items: center;
+
+${tw`h-[2676px] m-12 flex flex-col text-center gap-[72px] items-center`}
+background: #f8faff;
 
   h1 {
     font-size: 50px;

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-
+import tw from 'twin.macro';
 export const StyledHome = styled.div`
   max-width: 1920px;
   margin-inline: auto;

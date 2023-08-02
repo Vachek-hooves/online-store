@@ -1,48 +1,29 @@
 import { styled } from 'styled-components';
+import tw from 'twin.macro';
 
 export const StyledCart = styled.div`
   .product__singleCart {
-    height: 500px;
-    max-width: 250px;
-    border-radius: 24px;
+    ${tw`h-[500px] w-[250px] rounded-3xl p-4  flex flex-col justify-center items-start gap-5`}
     background: #fff;
-    display: flex !important;
-    width: 250px;
-    padding: 16px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
   }
   .product__like {
-    display: flex;
-    justify-content: space-between;
-    width: 218px;
+    ${tw` w-[218px] flex justify-between`}
   }
   .product__image {
-    width: 220px;
-    height: 144px;
+    ${tw`h-[144px] w-[220px]`}
   }
   .product__raiting {
-    display: flex;
-    flex-direction: row;
+    ${tw`flex flex-row`}
   }
   .product__title {
-    color: #212121;
+    ${tw`text-xl not-italic font-normal text-left`}
     font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
+    color: #212121;
   }
   .product__price {
-    text-align: left;
-    color: var(--black, #212121);
-    font-family: Lato;
-    font-size: 26px;
-    font-style: normal;
+    ${tw`text-left font-normal font-black text-lg`}
     font-weight: 900;
-    line-height: 120%;
+    font-family: Lato;
+    color: var(--black, #212121);
   }
 `;

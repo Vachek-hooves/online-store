@@ -1,8 +1,10 @@
 import { styled } from 'styled-components';
+import tw from 'twin.macro';
 
 export const StyledLike = styled.div`
 
   .icon {
+    
     fill: transparent;
     stroke: black;
     stroke-width: 30;
